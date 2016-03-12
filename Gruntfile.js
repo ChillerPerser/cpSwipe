@@ -4,6 +4,7 @@ module.exports = function(grunt) {
         pkg: grunt.file.readJSON('package.json'),
         uglify: {
             options: {
+                preserveComments: /^!/
             },
             build: {
                 src: 'src/<%= pkg.name %>.src.js',

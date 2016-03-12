@@ -1,4 +1,4 @@
-# cpSwipe
+# cpSwipe (v1.0.0)
 A jQuery Plugin to handle swipe events. Mostly used on horizontal image slideshows.
 
 ## Features
