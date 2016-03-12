@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link href='https://fonts.googleapis.com/css?family=Architects+Daughter' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="stylesheets/github-light.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="stylesheets/print.css" media="print">
+
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <title>Cpswipe by ChillerPerser</title>
+  </head>
+
+  <body>
+    <header>
+      <div class="inner">
+        <h1>Cpswipe</h1>
+        <h2></h2>
+        <a href="https://github.com/ChillerPerser/cpSwipe" class="button"><small>View project on</small> GitHub</a>
+      </div>
+    </header>
+
+    <div id="content-wrapper">
+      <div class="inner clearfix">
+        <section id="main-content">
+          <h1>
+<a id="cpswipe-v100" class="anchor" href="#cpswipe-v100" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>cpSwipe (v1.0.0)</h1>
+
+<p>A jQuery Plugin to handle swipe events. Mostly used on horizontal image slideshows.</p>
+
+<h2>
+<a id="features" class="anchor" href="#features" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Features</h2>
+
+<ul>
+<li>Lightweight (~4kb minified)</li>
+<li>Easy to use</li>
+<li>Detect vertical and/or horizontal swipe</li>
+</ul>
+
+<h2>
+<a id="example-usage" class="anchor" href="#example-usage" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Example Usage</h2>
+
+<p>Use the plugin like this:</p>
+
+<div class="highlight highlight-source-js"><pre><span class="pl-en">$</span>(<span class="pl-s"><span class="pl-pds">'</span>selector<span class="pl-pds">'</span></span>).<span class="pl-en">cpSwipe</span>(options, events);</pre></div>
+
+<h2>
+<a id="options" class="anchor" href="#options" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Options</h2>
+
+<table>
+<thead>
+<tr>
+<th>Key</th>
+<th>Type</th>
+<th>Default</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>mouse</td>
+<td>Boolean</td>
+<td>False</td>
+<td>Enable mouse events</td>
+</tr>
+<tr>
+<td>horizontal</td>
+<td>Boolean</td>
+<td>True</td>
+<td>enable horizontal swipe</td>
+</tr>
+<tr>
+<td>horizontalThreshold</td>
+<td>Number</td>
+<td>40</td>
+<td>horizontal swipe threshold</td>
+</tr>
+<tr>
+<td>preventDefaultAction</td>
+<td>Boolean</td>
+<td>False</td>
+<td>prevent the default action</td>
+</tr>
+<tr>
+<td>vertical</td>
+<td>Boolean</td>
+<td>False</td>
+<td>enable vertical swipe</td>
+</tr>
+<tr>
+<td>verticalThreshold</td>
+<td>Number</td>
+<td>40</td>
+<td>vertical swipe threshold</td>
+</tr>
+</tbody>
+</table>
+
+<h2>
+<a id="events" class="anchor" href="#events" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Events</h2>
+
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>up</td>
+<td>Swiped up</td>
+</tr>
+<tr>
+<td>down</td>
+<td>Swiped down</td>
+</tr>
+<tr>
+<td>right</td>
+<td>Swiped right</td>
+</tr>
+<tr>
+<td>left</td>
+<td>Swiped left</td>
+</tr>
+<tr>
+<td>start</td>
+<td>start tracking</td>
+</tr>
+<tr>
+<td>move</td>
+<td>while tracking</td>
+</tr>
+<tr>
+<td>end</td>
+<td>end tracking</td>
+</tr>
+</tbody>
+</table>
+
+<p>Every method is called with these arguments</p>
+
+<ul>
+<li>First argument is the element swiped on.</li>
+<li>Second arguments contains some data about distance.</li>
+</ul>
+
+<h2>
+<a id="notes" class="anchor" href="#notes" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Notes</h2>
+
+<p>This Plugins is tested on some bigger websites. If you find a bug or have a feature request, send me an email.</p>
+
+<h2>
+<a id="license" class="anchor" href="#license" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>License</h2>
+
+<p>This plugin is available under <a href="https://opensource.org/licenses/mit-license.php">the MIT license</a>.</p>
+
+<p><em>– <a href="http://christianlinke.info">Christian 'ChillerPerser' Linke</a></em></p>
+        </section>
+
+        <aside id="sidebar">
+          <a href="https://github.com/ChillerPerser/cpSwipe/zipball/master" class="button">
+            <small>Download</small>
+            .zip file
+          </a>
+          <a href="https://github.com/ChillerPerser/cpSwipe/tarball/master" class="button">
+            <small>Download</small>
+            .tar.gz file
+          </a>
+
+          <p class="repo-owner"><a href="https://github.com/ChillerPerser/cpSwipe"></a> is maintained by <a href="https://github.com/ChillerPerser">ChillerPerser</a>.</p>
+
+          <p>This page was generated by <a href="https://pages.github.com">GitHub Pages</a> using the Architect theme by <a href="https://twitter.com/jasonlong">Jason Long</a>.</p>
+        </aside>
+      </div>
+    </div>
+
+  
+  </body>
+</html>
