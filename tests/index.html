@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>cpSwipe</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <script type="text/javascript" src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+    <script type="text/javascript" src="../src/cpSwipe.src.js"></script>
+    <style type="text/css">
+        div {
+            background: #ededed;
+            color: #000;
+            height: 100%;
+            max-height: 360px;
+            max-width: 360px;
+            margin: 12px auto;
+            min-height: 200px;
+            overflow: auto;
+            width: 100%;
+
+            -webkit-touch-callout: none;
+            -webkit-user-select: none;
+            -khtml-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
+
+            /* allow only vertical scroll */
+            -ms-touch-action: pan-y;
+        }
+        table {
+            width: 100%;
+        }
+        table td,
+        table th {
+            padding: 5px 10px;
+            text-align: center;
+        }
+        table th {
+            border-bottom: 1px solid #fff;
+        }
+    </style>
+</head>
+<body>
+
+<div>
+    <table cellpadding="0" cellspacing="0">
+        <tr>
+            <th>Dir</th>
+            <th>X</th>
+            <th>Y</th>
+            <th>Control</th>
+        </tr>
+    </table>
+</div>
+
+<script type="text/javascript">
+    (function () {
+
+        function swipeEvent(dir, args) {
+
+            var tr = $('<tr />');
+            tr.append($('<td />').text(dir));
+            tr.append($('<td />').text(args.distance.x));
+            tr.append($('<td />').text(args.distance.y));
+            tr.append($('<td />').text(args.type));
+            $('table').append(tr);
+        }
+
+        $('div').cpSwipe(
+                {
+                    'mouse': true
+                },
+                {
+                    'up':    function(args) { swipeEvent('up', args);    },
+                    'down':  function(args) { swipeEvent('down', args);  },
+                    'right': function(args) { swipeEvent('right', args); },
+                    'left':  function(args) { swipeEvent('left', args);  }
+                }
+        );
+    }());
+</script>
+
+</body>
+</html>
