@@ -2,7 +2,7 @@
 A jQuery Plugin to handle swipe events. Mostly used on horizontal image slideshows.
 
 ## Features
-* Lightweight (~2kb minified)
+* Lightweight (~4kb minified)
 * Easy to use
 * Detect vertical and/or horizontal swipe
 
@@ -36,7 +36,10 @@ start | start tracking
 move | while tracking
 end | end tracking
 
-First argument is the element swiped on. Second arguments contains some data about distance.
+
+Every method is called with these arguments
+* First argument is the element swiped on.
+* Second arguments contains some data about distance.
 
 ## Notes
 This Plugins is tested on some bigger websites. If you find a bug or have a feature request, send me an email.
